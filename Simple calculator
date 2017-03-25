@@ -1,0 +1,42 @@
+//Author @Samir Saadi
+
+
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+
+    int media, n1, n2, n3;
+    cout<< "What's your first score? \n";
+    cin>> n1;
+    system ("cls");
+    cout<< "What's your second score? \n";
+    cin>> n2;
+    system ("cls");
+    cout<< "What's your third score? \n";
+    cin>> n3;
+    system ("cls");
+           
+   	   	
+   	if ((n1<=n2 && n1<=n3)){
+   		cout<<"Your final score is: "<<endl;
+   		cout<<(n2+n3)/2;
+   	}	  	
+              	
+    	
+    else if ((n2<=n1 && n2<=3)){
+    	cout<<"Your final score is: "<<endl;
+    	cout<<(n1+n3)/2;
+    }
+    	      
+        	
+   	else {
+   		cout<<"Your final score is: "<<endl;
+   		cout<<(n1+n2)/2;
+   	} 
+        	     	
+    
+    return 0;
+}
